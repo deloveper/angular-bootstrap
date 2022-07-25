@@ -1,1 +1,27 @@
-<p>products works!</p>
+<div>
+    <h3>Products list </h3>
+    <ul *ngFor="let product of products">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="" alt="">
+                <!-- <div class="card-header">
+                    Featured
+                </div> -->
+                <div class="card-body">
+                    <h5 class="card-title">{{product.name}}</h5>
+                    <p class="card-text">{{product.details}}</p>
+                    PRICE  :  <a href="#" class="btn btn-primary">{{product.price | currency:"INR"}}</a>
+                </div>
+                <!-- <div class="card-footer text-muted">
+                    2 days ago
+                </div> -->
+            </div>
+        </div>
+        </div>
+        </div>
+        
+
+    </ul>
+</div>
