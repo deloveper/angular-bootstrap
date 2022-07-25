@@ -32,8 +32,7 @@
             ],
             "styles": [
               "src/styles.scss",
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
-            ],
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"            ],
             "scripts": [
               "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
@@ -73,6 +72,12 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+        
+          "options":{
+  
+            "port":3200
+          },
+
           "configurations": {
             "production": {
               "browserTarget": "angular-bootstrap:build:production"
@@ -86,7 +91,8 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-bootstrap:build"
+            "browserTarget": "angular-bootstrap:build",
+          
           }
         },
         "test": {
